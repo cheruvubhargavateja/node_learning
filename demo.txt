@@ -1,0 +1,18 @@
+async function paginateProjects(page = 1, limit = 50) {
+    const offset = (page - 1) * limit;
+	// const limitValue = limit > 300 ? 300 : limit;
+	const { count, rows } = await CompanyEntity.findAndCountAll({
+		offset: offset,
+		limit: limit > 300 ? 300 : limit //we can also pass limitValue variable
+	  });
+
+    return {
+      total: count,
+      page,
+      limit,
+      data: rows,
+    };
+  }
+
+  const result = paginateProjects();
+  console.log(result);

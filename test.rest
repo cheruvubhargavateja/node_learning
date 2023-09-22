@@ -1,0 +1,36 @@
+POST http://localhost:3500/api/user/login
+Content-Type: application/json
+
+{
+  "email": "ajay.com",
+  "password": "Ajay@2"
+}
+
+
+#####
+POST http://localhost:3500/api/user/register
+Content-Type: application/json
+
+{
+  "username":"Ajay",
+  "email": "ajay.com",
+  "password": "Ajay@2"
+}
+
+
+####
+
+POST http://localhost:3500/api/user/63a41f0834506303cab57859
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzYTQxZjA4MzQ1MDYzMDNjYWI1Nzg1OSIsImVtYWlsIjoiYWpheS5jb20iLCJpYXQiOjE2NzE3MDA1MjEsImV4cCI6MTY3MTk1OTcyMX0.Zme4S0vg7B91yEPT0Lm2q9fbOetiy249RzUJto6VJEo
+
+
+{
+  "username":"Ajay Range Naidu",
+  "email": "ajay_c@trigent.com",
+  "password": "Ajay@2"
+}
+
+
+####
+DELETE  http://localhost:3500/api/user/639862ddded2159a7da93c95
