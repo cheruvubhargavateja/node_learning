@@ -1,10 +1,13 @@
 // import dotenv from 'dotenv';
 import express from 'express';
 import mongoose from 'mongoose';
+import cors from 'cors';
 import routes from './src/routes/routes.js';
 import { configs } from './src/config.js';
 const app = express();
+app.use(cors())
 app.use(express.json())
+
 // dotenv.config();
 
 // db connection 
